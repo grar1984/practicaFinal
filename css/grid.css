@@ -1,0 +1,40 @@
+body {
+  display: grid;
+  /* al usar fr se usa el espacio restante */
+  grid-template-columns: 200px 2fr 1fr;
+  grid-template-rows: 80px 20vh 50vh 150px;
+  ;
+}
+nav {
+  background-color: white;
+  /* Muy importante a tener en cuenta en el grid empieza siempre por 1 en columnas y filas*/
+  grid-area: navbar;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2; 
+}
+header {
+  background-color: white;
+  grid-area: header;
+  grid-column: 1 / 4;
+  grid-row: 2 / 3;
+}
+aside {
+  background-color: blueviolet;
+  grid-area: aside;
+  grid-column: 1 / 4;
+  grid-row: 3 / 4;
+}
+main {
+  background-color: yellow;
+  grid-area: main;
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+footer {
+  background-color: green;
+  grid-area: footer;
+  grid-column: 1 / 4;
+  grid-row: 4 / 5;
+}
