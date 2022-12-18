@@ -22,7 +22,7 @@ lo hechamos hacia la derecha*/
 .carousel-slides {
   height: 100vh;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   flex-direction: column;
   overflow: hidden;
   /* Esto es para que haga scroll suave */
@@ -39,3 +39,9 @@ esta justo debajo del carousel-slide */
   background-color: white;
 }
 
+.video {
+  display: flex;
+  justify-content: center;
+  border: #000;
+  padding-bottom: 30px;
+}
