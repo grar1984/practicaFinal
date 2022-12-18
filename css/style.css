@@ -1,34 +1,53 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 
 
-html, body {
-  margin: 0;
+html, body, header {
+  display: flex;
+  flex-direction: column;
+  margin: 4px;
   height: 100%;
 }
-
+label {
+  display: flex;
+  padding: 5px 5px;
+}
 * {
   font-family: "Raleway";
   box-sizing: border-box;
 }
 
-p {
+/* p {
+  display: flex;
+  flex: auto;
   font-family: "Raleway";
   padding: auto;
   margin: 10px 10px 10px 10px;
+  font-size: 16px;
+} */
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  /* vertical-align: 15px; */
+  font-family: "Raleway";
   font-size: 16px;
 }
-.formulario {
-  font-family: "Raleway";
-  padding: auto;
-  margin: 10px 10px 10px 10px;
-  vertical-align: auto;
-  font-size: 16px;
+
+.botones {
+  padding-top: 10px;
+}
+
+.contacto {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 h2 {
   text-align: center;
   font-family: "Raleway";
   font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .top-nav {
@@ -108,121 +127,113 @@ h2 {
   transform: rotate(-405deg);
 }
 
-/* .footer {
-  padding: auto;
+.frase-skills{
+  color: gray;
+  font-family: "Raleway";
+}
+  
+.progress {
+  height: 35px;
+  width: 100%;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  background-color: #686a6b;
+  margin-bottom: 15px;
+}
+  
+.progress-bar-primero {
+  animation: load-1 3s normal forwards;
+  height: 100%;
+  background: rgb(207, 43, 34);
+  display: flex;
   align-items: center;
-  } */
+  transition: width 0.25s;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.progress-bar-segundo {
+  animation: load-2 3s normal forwards;
+  height: 100%;
+  background: rgb(207, 43, 34);
+  display: flex;
+  align-items: center;
+  transition: width 0.25s;
+  border-radius: 5px;
+  overflow: hidden;
+}
 
-  .frase-skills{
-    color: gray;
-      font-family: "Raleway";
-  }
-  
-  .progress {
-      height: 35px;
-      width: 100%;
-      border: 1px solid #000000;
-      border-radius: 5px;
-      background-color: #686a6b;
-      margin-bottom: 15px;
-  }
-  
-  .progress-bar-primero {
-      animation: load-1 3s normal forwards;
-      height: 100%;
-      background: rgb(207, 43, 34);
-      display: flex;
-      align-items: center;
-      transition: width 0.25s;
-      border-radius: 5px;
-      overflow: hidden;
-  
-  }
-  .progress-bar-segundo {
-      animation: load-2 3s normal forwards;
-    height: 100%;
-    background: rgb(207, 43, 34);
-    display: flex;
-    align-items: center;
-    transition: width 0.25s;
-    border-radius: 5px;
-    overflow: hidden;
-  
-  }
-  .progress-bar-tercero {
-    animation: load-3 3s normal forwards;
-    height: 100%;
-    background: rgb(207, 43, 34);
-    display: flex;
-    align-items: center;
-    transition: width 0.25s;
-    border-radius: 5px;
-    overflow: hidden;
-  
-  }
-  .progress-bar-cuarto {
-    animation: load-4 3s normal forwards;
-    height: 100%;
-    background: rgb(207, 43, 34);
-    display: flex;
-    align-items: center;
-    transition: width 0.25s;
-    border-radius: 5px;
-    overflow: hidden;
-  
-  }
-  
-  
-  .progress-bar-text {
-    margin-left: 10px;
-    font-weight: bold;
-    color: #ffffff;
-  }
+.progress-bar-tercero {
+  animation: load-3 3s normal forwards;
+  height: 100%;
+  background: rgb(207, 43, 34);
+  display: flex;
+  align-items: center;
+  transition: width 0.25s;
+  border-radius: 5px;
+  overflow: hidden;
+}
 
-  @media (max-width: 476px) {
-    .menu-button-container {
-      display: flex;
-    }
-    .menu {
-      position: absolute;
-      top: 0;
-      margin-top: 50px;
-      left: 0;
-      flex-direction: column;
-      width: 100%;
-      justify-content: center;
-      align-items: center;
-    }
+.progress-bar-cuarto {
+  animation: load-4 3s normal forwards;
+  height: 100%;
+  background: rgb(207, 43, 34);
+  display: flex;
+  align-items: center;
+  transition: width 0.25s;
+  border-radius: 5px;
+  overflow: hidden;  
+}
+
+.progress-bar-text {
+  margin-left: 10px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+@media (max-width: 476px) {
+  .menu-button-container {
+  display: flex;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  margin-top: 50px;
+  left: 0;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
   
-    #menu-toggle ~ .menu li {
-      height: 0;
-      margin: 0;
-      padding: 0;
-      border: 0;
-      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    }
+#menu-toggle ~ .menu li {
+  height: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
     
-    #menu-toggle:checked ~ .menu li {
-      border: 1px solid #333;
-      height: 2.5em;
-      padding: 0.5em;
-      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    }
+#menu-toggle:checked ~ .menu li {
+  border: 1px solid #333;
+  height: 2.5em;
+  padding: 0.5em;
+  transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.menu > li {
+  display: flex;
+  justify-content: center;
+  padding: 0.5em 0;
+  width: 100%;
+  color: white;
+  background-color: #222;
+}
     
-    .menu > li {
-      display: flex;
-      justify-content: center;
-      padding: 0.5em 0;
-      width: 100%;
-      color: white;
-      background-color: #222;
-    }
-    
-    .menu > li:not(:last-child) {
-      border-bottom: 1px solid #444;
-    }
-  }
-  
+.menu > li:not(:last-child) {
+  border-bottom: 1px solid #444;  
+}
+
   @keyframes load-1 {
     0% { width: 0; }
     100% { width: 42%;}
@@ -239,3 +250,4 @@ h2 {
     0% { width: 0; }
     100% { width: 9%;}
   }
+}

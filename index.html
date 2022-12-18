@@ -26,10 +26,10 @@
       <div class='menu-button'></div>
       </label>
         <ul class="menu">
-          <li><a href="#sobremi"></a> Sobre mi</li>
-          <li><a href="#servicio"></a> Servicios</li>
-          <li><a href="#contacto"></a> Contacto</li>
-          <li><a href="#multimedia"></a> Multimedia</li>
+          <li><a href="#sobremi"></a>Sobre mi</li>
+          <li><a href="#servicio"></a>Servicios</li>
+          <li><a href="#contacto"></a>Contacto</li>
+          <li><a href="#multimedia"></a>Multimedia</li>
         </ul>
       </section>
   </header>
@@ -42,7 +42,7 @@
             <p>Actualmente soy jefe de operaciones de una empresa de transporte de viajeros encargandome de la 
             supervision y captura de clientes consigtanarios de buques asi como la gestion de reservas y 
             trafico de la flota.</p>
-            <p>Contamos con 41 conductores y 32 Vehiculos todos ellos a mi cargo, haciendo una media de 200 Servicios diarios.</pss=>
+            <p>Contamos con 41 conductores y 32 Vehiculos todos ellos a mi cargo, haciendo una media de 200 Servicios diarios.</p>
             <p>Por mi sangre navega la sal de la playa. Surfero de nacimiento.</p> 
             <p>Apasionado del mundo camper y de disfrutar de una cerveza en la playa con el atardecer</p>
             <p><strong>MI SUEÑO ES PODER ESTAR PICANDO CODIGO COMO HE MENCIONADO ARRIBA</strong></p>
@@ -51,72 +51,64 @@
           </header>
       </article>
   </section>
-        <hr>
+        
   <section>
       <article>
-          <header>
             <h2>¿Porque del BootCamp?</h2>
             <p>Muy facil. 
             Dependiendo de que siempre me ha llamado la tecnologia en general, 
             mi padre fue programador 
             y es algo que me viene de "cuna" <strong>(Lo se he tardado 38 años en darme cuenta 
-            de que es lo que necesito en mi vida)</strong></i></p>
-            <p>otra de las cosas es que trabajando directamente con las 
+            de que es lo que necesito en mi vida)</strong></i>
+            otra de las cosas es que trabajando directamente con las 
             <strong>APPS de Gestion de Trafico</strong> nativas
-            en servidores virtuales de Windows, me he dado cuenta de las <strong>carencias</strong></p> 
-            <p>tienen estos programas
+            en servidores virtuales de Windows, me he dado cuenta de las <strong>carencias</strong> 
+            tienen estos programas
             ya que no estan pensados en la movilidad del <i>jefe de trafico y/o Coordinadores</i> 
             o tienen que hacerlo desde la Oficina
             desde el que se tiene que conectar a un servidor remoto
             para poder gestionar el trafico como consecuencia de perdida de tiempo y eficacia.
             </p>
-          </header>
       </article>
   </section>
-        <hr>
   <section>
       <article>
           <header>
             <h2>Meta</h2>
             <p>Asi que me he puesto la meta de crear una <strong>APP WEB de Gestion y control sobre 
             Empresa de Transportes de Viajeros</strong> desde la cual se pueda trabajar desde un movil, tablet, portatil o Sobremesa,
-            y que para ello solo necesiten una simple conexion a internet.</pclass=>
+            y que para ello solo necesiten una simple conexion a internet.</p>
         <hr>
-    <div id="servicio">
-    <h2>Añadir Datos de Servicio</h2>
-      <nav class="formulario">
+    <div>
+    <h2 id="servicio">Añadir Datos de Servicio</h2>
+      <nav>
       <main>
-                  <section id="contratante">
-                <form 
-                action="/PracticaHTMLCSS/ContactoEnviado.html"
-                method="post"
-                >
-            <div>
-              <label for="contratante">Nombre del Contratante:</label>
-              <select 
-              required
-              name="nombrecontratante" 
-              id="nombrecontratante"
-              >
-              <option value="seleccion">Seleccionar contratante</option>
-              <option value="miguel">Miguel Marco Gol - CIF 11111111B</option>
-              <option value="pepe"> Emiliano Salido del Pozo - CIF 1111111D</option>
-              <option value="aitor">Aitor Menta - CIF 11111113A</option>
-              </select>
-              </div>
-        <hr>
-            <div>                  
-              <label for="date">Fecha</label>
-              <input 
-              required
-              type="date"
-              name="fecha" 
-              id="fecha" 
-              placeholder="Introduce la fecha del Servicio" 
-              >
-            </div>            
-        <hr>
-            <div>
+        <section id="contratante">
+        <form 
+          action="/PracticaHTMLCSS/ContactoEnviado.html"
+          method="post"
+        >
+        <div class="formulario">
+          <label for="contratante">Nombre del Contratante:</label>
+        <select 
+          required
+          name="nombrecontratante" 
+          id="nombrecontratante"
+          >
+        <option value="seleccion">Seleccionar contratante</option>
+        <option value="miguel">Miguel Marco Gol - CIF 11111111B</option>
+        <option value="pepe"> Emiliano Salido del Pozo - CIF 1111111D</option>
+        <option value="aitor">Aitor Menta - CIF 11111113A</option>
+        </select>
+            
+        <label for="date">Fecha</label>
+        <input 
+        required
+        type="date"
+        name="fecha" 
+        id="fecha" 
+        placeholder="Introduce la fecha del Servicio" 
+        >
               <label for="hora">Hora del Servicio</label>
               <input
               required
@@ -125,10 +117,7 @@
               id="hora" 
               placeholder="Introduce la hora del Servicio" 
               >
-            </div>
-        <hr>
-            <div>
-              <label for="origen">Origen</label>
+            <label for="origen">Origen</label>
               <input 
               required
               type="text"
@@ -138,9 +127,6 @@
               size="50"
               maxlength="30"
               >
-            </div>
-        <hr>
-            <div>
               <label for="destino">Destino</label>
                 <input 
                 required
@@ -151,11 +137,9 @@
                 size="50"
                 maxlength="30"
                 >
-            </div>
-        <hr>
-            <div>
+
               <fieldset>
-                <legend>Tipo de Servicio</legend>
+                <legend style="padding-top: 6px;">Tipo de Servicio</legend>
                 <label for="tipoServicio">Discrecional</label>
                 <input 
                 type="checkbox" 
@@ -171,9 +155,7 @@
                 value="turistico"
                 >
               </fieldset>
-            </div>
-        <hr>
-            <div>
+
               <label for="datosCliente">Nombre del cliente</label>
               <input 
               required
@@ -184,8 +166,7 @@
               size="50"
               maxlength="30"
               >
-            </div>
-            <div>
+
               <label for="dni">DNI o Pasaporte</label>
               <input 
               type="number" 
@@ -195,9 +176,7 @@
               maxlength="9"
               pattern="[0-9A-Z]+"
               >
-            </div>
-              
-            <div>
+
               <label for="tlf">Telefono:</label>
               <input 
               required
@@ -207,8 +186,7 @@
               placeholder="Introduce Nº Telefono"
               pattern="[0-9]+"
               >
-            </div>
-            <div>
+
               <label for="pax">Introduce Nº de Pasajeros (1-55)</label>
               <input 
               type="number" 
@@ -219,9 +197,8 @@
               size="30"
               pattern="\d*"
               >
-            </div>
+
                 <!-- Ojo solucionar este campo de abajo para que solo permita numeros y con simbolo de € detras-->
-            <div>
               <label for="precio">Precio</label>
               <input type="number"
               id="precio"
@@ -229,9 +206,7 @@
               pattern="[0-9]"
               placeholder="€"
               >
-            </div>
-        <hr>
-            <div>
+
             <label for="observaciones">Observaciones del servicio</label>
               <textarea 
               name="observaciones" 
@@ -240,10 +215,8 @@
               rows="10"
               >
               </textarea>    
-            </div>
-        <hr>       
-            <div>
-              <input 
+              <div class="botones">
+              <input
               type="submit" 
               value="Enviar"
               >    
@@ -252,13 +225,14 @@
               value="Limpiar Formulario"
               >
               </button>
+              </div>
             </div>
           </form>
         </nav>
       </div>
         <hr>    
-      <div id="contacto">
-        <h2>Contacto</h2>
+      <div>
+        <h2 id="contacto">Contacto</h2>
           <form 
           action="/practicaFinal/ContactoEnviado.html"
           method="get"
@@ -306,8 +280,8 @@
           >
       </div>
         <!-- Arreglar tipo de consulta. esta dando la misma opcion -->
-        <fieldset class="formulario">
-          <legend>Tipo de consulta</legend>
+        <fieldset>
+          <legend class="formulario" style="padding-top: 10px;">Tipo de consulta</legend>
             <label for="user">Usuario</label>
               <input  
               type="checkbox" 
@@ -334,7 +308,7 @@
       </div>
       <hr>
       <div>
-        <fieldset class="formulario">
+        <fieldset class="contacto">
           <legend>¿Como nos has conocido?</legend>
             <label for="universidad">Universidad</label>
               <input 
@@ -366,7 +340,7 @@
             </fieldset>
       </div>
       <hr>    
-      <div class="formulario">
+      <div class="botones" style="padding-bottom: 10px;">
         <input 
         type="submit" 
         value="Enviar"
@@ -429,47 +403,17 @@
         src="/practicaFinal/images/fronton1.avif" 
         alt="Fronton">
         </div>
-        <!-- <div class="carousel-slides">
-          <iframe 
-            width="560" 
-            height="315" 
-            src="https://www.youtube.com/embed/Fc6cH4w8ixo" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="accelerometer; 
-            autoplay; 
-            muted;
-            clipboard-write; 
-            encrypted-media; 
-            gyroscope; 
-            picture-in-picture" 
-            allowfullscreen>
-          </iframe> -->
-        </div>
-        <!-- <div 
-          id="slide2">
-          <img 
-          src="/practicaFinal/images/fronton3.avif" 
-          alt="Fronton" -->
-          <!-- >
-          </div> -->
-          <div 
-            id="slide3" 
-            width="560" 
-            height="315" 
-            src="https://www.youtube.com/embed/Fc6cH4w8ixo" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="accelerometer; 
-              autoplay; 
-              muted;
-              clipboard-write; 
-              encrypted-media; 
-              gyroscope; 
-              picture-in-picture" 
-            allowfullscreen>
-</>
-          >Slide 3</div>
+          <div class="carousel-slides">
+          <video src="/practicaFinal/images/previa.mp4"  
+          id="slide2" 
+          width="650" 
+          height="420"
+          autoplay
+          muted
+          >
+          </video>
+        
+        
       </div>
       <div class="carousel-links">
           <a href="#slide1" class="carousel-dot"></a>

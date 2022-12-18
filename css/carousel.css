@@ -18,7 +18,7 @@ se aplasta y con el flex-direction: column
 lo hechamos hacia la derecha*/
 
 .carousel-slides {
-  height: 40vh;
+  height: 30vh;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
