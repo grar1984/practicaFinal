@@ -1,11 +1,8 @@
-
-
 .carousel-links {
   display: flex;
   justify-content: center;
 }
 
-/* Aqui estamos haciendo los botones del slides */
 .carousel-dot {
   background-color: #000;
   width: 16px;
@@ -15,22 +12,15 @@
   border-radius: 50%;
 }
 
-/* Este es el efecto del slide al usar el wrap no
-se aplasta y con el flex-direction: column
-lo hechamos hacia la derecha*/
 
 .carousel-slides {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
   overflow: hidden;
-  /* Esto es para que haga scroll suave */
   scroll-behavior: smooth;
 }
-
-/* Al poner el simbolo > solo se aplica el estilo a lo que
-esta justo debajo del carousel-slide */
 
 .carousel-slides > div {
   height: 100%;
