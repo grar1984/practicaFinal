@@ -35,3 +35,17 @@
   border: #000;
   padding-bottom: 30px;
 }
+
+#slider {
+	overflow: hidden;
+}
+
+@keyframes carousel-slides {
+	0% { left: 0; }
+	30% { left: 0; }
+	33% { left: -100%; }
+	63% { left: -100%; }
+	66% { left: -200%; }
+	95% { left: -200%; }
+	100% { left: 0; }
+}
