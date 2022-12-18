@@ -16,19 +16,9 @@ label {
   box-sizing: border-box;
 }
 
-/* p {
-  display: flex;
-  flex: auto;
-  font-family: "Raleway";
-  padding: auto;
-  margin: 10px 10px 10px 10px;
-  font-size: 16px;
-} */
-
 .formulario {
   display: flex;
   flex-direction: column;
-  /* vertical-align: 15px; */
   font-family: "Raleway";
   font-size: 16px;
 }

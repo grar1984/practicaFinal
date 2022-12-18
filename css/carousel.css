@@ -1,3 +1,5 @@
+
+
 .carousel-links {
   display: flex;
   justify-content: center;
@@ -18,14 +20,13 @@ se aplasta y con el flex-direction: column
 lo hechamos hacia la derecha*/
 
 .carousel-slides {
-  height: 30vh;
+  height: 100vh;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   overflow: hidden;
   /* Esto es para que haga scroll suave */
   scroll-behavior: smooth;
-  
 }
 
 /* Al poner el simbolo > solo se aplica el estilo a lo que
@@ -35,5 +36,6 @@ esta justo debajo del carousel-slide */
   height: 100%;
   width: 100%;
   color: #fff;
-  background-color: rgb( 68, 68, 68);
+  background-color: white;
 }
+
